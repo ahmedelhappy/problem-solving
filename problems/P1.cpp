@@ -25,5 +25,5 @@ int main () {
   if (A_is_even && B_is_even) result = A / B;
   if (!A_is_even && B_is_even) result = A + B;
   if (A_is_even && !B_is_even) result = A - B;
-  cout << result;
+  cout << result << endl;
 }

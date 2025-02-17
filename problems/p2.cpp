@@ -8,38 +8,45 @@
 // ○ 3 1 2 ⇒ 1 2 3
 // ○ 3 2 1 ⇒ 1 2 3
 // ● Do you notice there are only 6 ways to permutate 3 numbers!
-
-
-// Problem #3: Maximum but constrained
-// ● Given 3 integers, you have to find the biggest one of them which is < 100.
-// ○ Print -1 if no such number
-// ● Inputs
-// ○ 22 90 115 ⇒ 90
-// ■ Here [20 90] are only < 100. Maximum (20, 90) = 90
-// ○ 200 300 400 ⇒ -1
-// ■ All of them are > 100, so no answer
-// ○ 50 100 150 ⇒ 50
-// ■ Only 50 is < 100.
-// ○ 10 30 20 ⇒ 30
-// ■ The 3 numbers < 100, so their max is 30
-
-
-// Problem #4: Conditional Count
-// ● Write a program that reads number X, then other 5 numbers. Print 2 values:
-// ○ How many numbers <= X
-// ○ How many numbers > X
-// ○ Any relation between these 2 outputs?
-// ● Inputs
-// ○ 10 300 1 5 100 200
-// ○ Output: 2 3
-// ○ Explantation
-// ○ 2 numbers (1, 5) are <= 10
-// ○ 3 numbers (100, 200, 300) are > 10
-
+//==============================================================
 
 #include <iostream>
 using namespace std;
 
-int main () {
-  
+int main()
+{
+  int num1, num2, num3, temp;
+  cin >> num1 >> num2 >> num3;
+
+  if (num2 < num1) //swap them
+  {
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+    //now num1 and num2 are sorted.
+  }
+  if (num3 < num2) //swap them
+  {
+    temp = num2;
+    num2 = num3;
+    num3 = temp;
+    //now num2 and num3 are sorted
+    //check again num1 and num2
+    if (num2 < num1) 
+    {
+      temp = num1;
+      num1 = num2;
+      num2 = temp;
+      //now num1 and num2 are sorted, and num2 and num3 are already sorted.
+    }
+  }
+  cout << num1 << " " << num2 << " " << num3 << endl;
+
+  //another way
+  // if (num1 < num2 && num2 < num3 && num1 < num3) cout << num1 << " " << num2 << " " << num3; cout << endl;
+  // if (num1 < num2 && num3 < num2 && num1 < num3) cout << num1 << " " << num3 << " " << num2; cout << endl;
+  // if (num2 < num3 && num2 < num1 && num1 < num3) cout << num2 << " " << num1 << " " << num3; cout << endl;
+  // if (num2 < num3 && num2 < num1 && num3 < num1) cout << num2 << " " << num3 << " " << num1; cout << endl;
+  // if (num3 < num2 && num3 < num1 && num1 < num2) cout << num3 << " " << num1 << " " << num2; cout << endl;
+  // if (num3 < num2 && num3 < num1 && num2 < num1) cout << num3 << " " << num2 << " " << num1; cout << endl;
 }
