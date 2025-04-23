@@ -66,22 +66,21 @@
 // using namespace std;
 
 // int main() {
-// 	int result, num;
+// 	int x, start, end, cnt = 0;
 
-// 	cin>>result;	// First number
+// 	cin>>x;
 
-// 	// Read 9 times and maximize
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
-// 	cin>>num;	if(result < num)	result = num;
+// 	//Read start and end, then see if X is between them or not, 3 times
+// 	cin>>start>>end;
+// 	cnt += (start <= x && x <= end);
 
-// 	cout<<result;
+// 	cin>>start>>end;
+// 	cnt += (start <= x && x <= end);
+
+// 	cin>>start>>end;
+// 	cnt += (start <= x && x <= end);
+
+// 	cout<<cnt<<"\n";
 
 // 	return 0;
 // }

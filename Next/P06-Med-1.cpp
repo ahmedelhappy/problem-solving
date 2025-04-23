@@ -7,6 +7,39 @@
 // ○ If it is hard constraint; code it in whatever way
 
 
+#include <iostream>
+using namespace std;
+
+int main () {
+  int num, max;
+  max = INT_MIN;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cin >> num;
+  if (num > max) max = num;
+  cout << max;
+}
+
+
+
+
+
 
 
 
@@ -26,22 +59,32 @@
 // using namespace std;
 
 // int main() {
-// 	int x, start, end, cnt = 0;
+// 	int result, num;
 
-// 	cin>>x;
+// 	cin>>result;	// First number
 
-// 	//Read start and end, then see if X is between them or not, 3 times
-// 	cin>>start>>end;
-// 	cnt += (start <= x && x <= end);
+// 	// Read 9 times and maximize
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
+// 	cin>>num;	if(result < num)	result = num;
 
-// 	cin>>start>>end;
-// 	cnt += (start <= x && x <= end);
-
-// 	cin>>start>>end;
-// 	cnt += (start <= x && x <= end);
-
-// 	cout<<cnt<<"\n";
+// 	cout<<result;
 
 // 	return 0;
 // }
+
+
+
+
+
+
+
+
+
 
