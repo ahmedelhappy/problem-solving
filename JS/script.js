@@ -1,4 +1,3 @@
-
 /*
 // positiveSum
 
@@ -20,3 +19,21 @@ function positiveSum(arr) {
 
 console.log(positiveSum(myArr));
 */
+
+
+//Sum without highest and lowest number
+
+function sumArray(array) {
+  if (!array || array.length <= 2) return 0;
+  let highest = Number.MIN_VALUE;
+  let lowest = Number.MAX_VALUE;
+  let sum = 0;
+  array.forEach((num) => {
+    if (num > highest) highest = num;
+    if (num < lowest) lowest = num;
+    sum += num;
+  });
+  return sum - (highest + lowest);
+}
+
+console.log(sumArray(0));
