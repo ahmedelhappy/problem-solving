@@ -20,7 +20,7 @@ function positiveSum(arr) {
 console.log(positiveSum(myArr));
 */
 
-
+/*
 //Sum without highest and lowest number
 
 function sumArray(array) {
@@ -37,3 +37,17 @@ function sumArray(array) {
 }
 
 console.log(sumArray(0));
+*/
+
+
+// String repeat
+
+// function repeatStr (n, s) {
+//   while (n--) {
+//     let result = "";
+//     result += s;
+//   }
+// }
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
