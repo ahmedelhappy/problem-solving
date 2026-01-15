@@ -1,13 +1,29 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+
 # C++ compiled files
+*.exe
 *.out
 *.o
 *.obj
-*.gch
-*.a
-*.so
-# Default compiler output
-a.out
-# Backup and temporary files
-*~
+*.class
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Editor / IDE
+.vscode/
+.idea/
 *.swp
-*.tmp
